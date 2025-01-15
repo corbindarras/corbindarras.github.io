@@ -1,22 +1,12 @@
-<div id="adobe-dc-view"></div>
-<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
-<script type="text/javascript">
-	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "c4de380e1cb84a3dacb0065dbd33c62b", divId: "adobe-dc-view"});
-        const pdfPromise = fetch("/rintaro/corbin_dahl_resume.pdf")
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Failed to fetch the PDF file");
-                }
-                return response.blob();
-            });
-		adobeDCView.previewFile({
-			content: {
-				promise: pdfPromise,
-			},
-			metaData:{
-                fileName: "corbin_dahl_resume.pdf",
-            }
-		}, {});
-	});
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1ogy7gz-WcBy3qEfJUQXdff8Lz-ua4j8K/view">
+</head>
+<body>
+    <p>If you are not redirected automatically, <a href="https://drive.google.com/file/d/1ogy7gz-WcBy3qEfJUQXdff8Lz-ua4j8K/view">click here</a>.</p>
+</body>
+</html>
