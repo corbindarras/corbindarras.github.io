@@ -4,8 +4,9 @@
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "c4de380e1cb84a3dacb0065dbd33c62b", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{promise: "<FILE_BLOB_PROMISE>"},
-			metaData:{fileName: "<FILE_NAME>"}
+			content:{promise:fetch("https://www.corbindarras.github.io/rintaro/corbin_dahl_resume.pdf")
+            .then(response => response.blob())},
+			metaData:{fileName: "corbin_dahl_resume.pdf"}
 		}, {});
 	});
 </script>
